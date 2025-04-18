@@ -33,7 +33,7 @@ if [[ $resposta == "y" || $resposta == "Y" ]]; then
     pip install termcolor > /dev/null
     echo 
     echo 
-    echo -e "${amarelo}[ ✔️ ] DEPENDÊNCIAS INSTALADAS, DE python3 start.py PARA CONTINUAR. ${reset}"
+    echo -e "${amarelo}[ ✔️ ] DEPENDÊNCIAS INSTALADAS, DE python3 main.py PARA CONTINUAR. ${reset}"
     echo 
 elif [[ $resposta == "n" || $resposta == "N" ]]; then
     echo -e "${amarelo}Instalação cancelada.${reset}"

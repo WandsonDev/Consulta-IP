@@ -51,4 +51,4 @@ while True:
     if continuar.lower() == "s":
         break
     else:
-        os.system("python3 .source/menu/main.py")
+        os.system("python3 src/menu/main.py")

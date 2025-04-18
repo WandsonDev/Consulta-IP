@@ -23,7 +23,7 @@ from json import loads
 time.sleep(3.2)
 os.system("clear");time.sleep(1.5)
 
-logoa = '.source/logo/logo.txt'
+logoa = 'src/logo/logo.txt'
 api_caminho ='.apis/'
 
 with open(logoa, 'r') as file:
@@ -65,23 +65,23 @@ rss = input(menu)
 if rss == '1':
    print(f'Certo, Aguarde Alguns Instantes...');time.sleep(1.2)
    try:
-     os.system("clear");os.system(f'python3 .source/menu/ip-api.py')
+     os.system("clear");os.system(f'python3 src/menu/ip-api.py')
    except:
-     os.system("clear");os.system(f'python3 .source/menu/ip-api.py')
+     os.system("clear");os.system(f'python3 src/menu/ip-api.py')
 elif rss == '2':
    print(f'{ciano}Este Método Está Offline, Escolha Outro.')
    restart()
 elif rss == '3':
    print(f'Certo, Aguarde Alguns Instantes...');time.sleep(1.2)
-   os.system("clear");os.system(f'python3 .source/menu/ip-whois.py')
+   os.system("clear");os.system(f'python3 src/menu/ip-whois.py')
    
 elif rss == '4':
    print(f'Certo, Aguarde Alguns Instantes...');time.sleep(1.2)
-   os.system("clear");os.system(f'python3 .source/menu/ipify.py')
+   os.system("clear");os.system(f'python3 src/menu/ipify.py')
      
 elif rss == '5':
     print(f'Certo, Verificando Seu {amarelo}IP');time.sleep(1.2)
-    os.system("clear");os.system('python3 .source/menu/my-ip.py')
+    os.system("clear");os.system('python3 src/menu/my-ip.py')
 elif rss == '98':
     print(f'{amarelo}{app_version}')
     restart()

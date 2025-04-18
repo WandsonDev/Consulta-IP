@@ -15,8 +15,8 @@ from json import loads
 time.sleep(3.2)
 os.system("clear");time.sleep(1.5)
 
-logoa = '.source/logo/logo.txt'
-apps = '.source/menu/main.py'
+logoa = 'src/logo/logo.txt'
+apps = 'src/menu/main.py'
 
 with open(logoa, 'r') as file:
     conteudo = file.read()
@@ -26,8 +26,8 @@ print(f"{vermelho}{conteudo}");time.sleep(2.3);
 
 def verificar_usuario():
     # Verifica se o arquivo de nome de usuário existe
-    return os.path.exists('.source/userdata/username.txt')
-    os.system("cd .source/main.py")
+    return os.path.exists('src/userdata/username.txt')
+    os.system("cd src/main.py")
 
 def criar_usuario():
     # Solicita o nome de usuário e a senha ao usuário
@@ -35,11 +35,11 @@ def criar_usuario():
     senha = input(f'\n{amarelo}Como Vai Ser Sua Senha de Acesso à Este Script?\n-->{ciano} ')
 
     # Salva o nome de usuário em um arquivo
-    with open('.source/userdata/username.txt', 'w') as arquivo_username:
+    with open('src/userdata/username.txt', 'w') as arquivo_username:
         arquivo_username.write(username)
 
     # Salva a senha em um arquivo
-    with open('.source/userdata/senha.txt', 'w') as arquivo_senha:
+    with open('src/userdata/senha.txt', 'w') as arquivo_senha:
         arquivo_senha.write(senha)
 
     print("Usuario Criado. Abrindo Script...")
@@ -49,7 +49,7 @@ def main():
     if verificar_usuario():
     
         os.system("clear");print(f"{vermelho}{conteudo}");time.sleep(2.3);
-        with open('.source/userdata/username.txt', 'r') as arquivo_username:
+        with open('src/userdata/username.txt', 'r') as arquivo_username:
             username = arquivo_username.read().strip()
             
         if len(sys.argv) > 1:
@@ -59,7 +59,7 @@ def main():
         else:
           senha_armazenada = input(f'{ciano}Eae {username}, Digite sua senha para continuar:\n-->{amarelo} ')
 
-        with open('.source/userdata/senha.txt', 'r') as arquivo_senha:
+        with open('src/userdata/senha.txt', 'r') as arquivo_senha:
             senha_salva = arquivo_senha.read().strip()
 
         if senha_armazenada == senha_salva:

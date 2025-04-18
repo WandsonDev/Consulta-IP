@@ -73,5 +73,5 @@ if opcao.lower() == "s":
     exibir_dados_ip(dados_novo_ip)
 else:
     print(f"{ciano}Consulta encerrada.")
-    os.system("python3 .source/menu/index.py")
+    os.system("python3 src/menu/index.py")
 
