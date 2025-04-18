@@ -1,0 +1,22 @@
+COMANDOS PARA INSTALAR E/OU ABRIR.
+
+
+Comandos Para Instalar o Painel de Consulta IP:
+cd --
+pkg install git
+git clone https://github.com/Wandson-Dev/Consulta-IP
+cd Consulta-IP
+bash instalador.sh
+python3 main.py
+
+
+Quando Instalar, Sempre Que Você Fechar o Script ou o Termux e Quiser Abri-lo Novamente, Use Esses Comandos:
+cd --
+cd Consulta-IP
+python3 main.py
+
+
+Espero que Gostem do Script. 👑
+
+
+@Wandson-Dev
